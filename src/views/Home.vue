@@ -1,18 +1,28 @@
 <template>
-  <div class="home">
+  <div class="home bg-grey-1">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import { mapActions,mapGetters } from 'vuex'
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+  },
+  mounted () {
+    this.getCategories().then(() => {
+      console.log(this.categories[0])
+    })
+    // this.getCategory({ id: 1})
+   this.hello()
+  },
+  computed: {
+    ...mapGetters('category', ['categories'])
+  },
+  methods: {
+    ...mapActions('category', ['getCategories', 'getCategory'])
   }
 }
 </script>

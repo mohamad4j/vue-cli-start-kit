@@ -1,0 +1,56 @@
+
+$primary: #39496E;
+$secondary: #FF7C5A;
+$tertiary: #76A6EC;
+
+$black: #000000;
+$white: #ffffff;
+$grey-1: #F8F8F8;
+$grey-2: #F5F5F5;
+$grey-3: #EFEFEF;
+$grey-4: #E2E2E2;
+$grey-5: #CBCBCB;
+$grey-6: #717171;
+$indigo-1: #97A7CB;
+$indigo-2: #294480;
+$indigo-3: #39496E;
+$indigo-4: #3F4553;
+$pink-1: #FF7C5A08;
+$red-1: #FF8D8D;
+$red-2: #F35959;
+$blue-1: #EBF0FF;
+$blue-2: #8DBBFF;
+$deep-orange-1: #F8DED7;
+$deep-orange-2: #FF7C5A;
+$orange-3: #FFA058;
+$orange-2: #FFE9CC;
+$orange-1: #FFF7E2;
+$green: #32A432;
+
+$colors: ('primary': $primary,
+        'secondary': $secondary,
+        'tertiary': $tertiary,
+        'grey-1': $grey-1,
+        'grey-2': $grey-2,
+        'grey-3': $grey-3,
+        'grey-4': $grey-4,
+        'grey-5': $grey-5,
+        'grey-6': $grey-6,
+        'deep-orange-1': $deep-orange-1,
+        'deep-orange-2': $deep-orange-2,
+        'orange-1': $orange-1,
+        'orange-2': $orange-2,
+        'orange-3': $orange-3,
+        'indigo-1': $indigo-1,
+        'indigo-2': $indigo-2,
+        'indigo-3': $indigo-3,
+        'indigo-4': $indigo-4,
+        'pink-1': $pink-1,
+        'red-1': $red-1,
+        'red-2': $red-2,
+        'blue-1': $blue-1,
+        'blue-2': $blue-2,
+        'green': $green,
+        'black': $black,
+        'white': $white
+);

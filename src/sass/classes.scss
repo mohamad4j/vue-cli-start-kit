@@ -1,0 +1,78 @@
+@import "variables";
+@import "mixins";
+:root{
+  --q-color-primary:  #{$primary};
+  --q-color-secondary: #{$secondary}
+}
+
+
+@each $color, $name in $colors {
+  .bg-#{$color} {
+    background: #{$name};
+  }
+  .text-#{$color} {
+    color: #{$name}!important;
+  }
+  .border-#{$color} {
+    border-color: #{$name}!important;
+  }
+}
+.border-solid {
+  border: 1px solid;
+}
+.border-solid-2{
+  border: 2px solid;
+}
+.border-solid-3{
+  border: 3px solid;
+}
+.rtl {
+  direction: rtl;
+}
+.ltr {
+  direction: ltr;
+}
+.text-center {
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+.text-justify{
+  text-align: justify;
+}
+@for $i from 1 through 30 {
+  .size-#{$i} {
+    font-size:  #{0.2*$i}em;
+  }
+}
+@for $i from 1 through 30 {
+  .line-#{$i} {
+    line-height:  #{0.2*$i}em;
+  }
+}
+
+$j: 10;
+@while $j < 55 {
+  .radius-#{$j} {
+    border-radius: #{$j}px;
+  }
+  $j: $j + 5
+}
+
+.radius-100-50 {
+  border-radius: 100px 50px;
+}
+input,textarea{
+  padding: 5px 10px;
+}
+input:active,input:focus,textarea:active,textarea:focus{
+  outline: none;
+}
+input::placeholder,textarea::placeholder{
+  color: $grey-5;
+  font-weight: lighter;
+}

@@ -1,0 +1,22 @@
+@mixin fface($path, $family, $type: '', $weight: 400, $svg: '', $style: normal) {
+  @font-face {
+    font-family: $family;
+    @if $svg == '' {
+      // with OTF without SVG and EOT
+      src: url('#{$path}eot/#{$type}.eot');
+      src: url('#{$path}eot/#{$type}.eot?#iefix') format('embedded-opentype'),
+      url('#{$path}woff2/#{$type}.woff2') format('woff2'),
+      url('#{$path}woff/#{$type}.woff') format('woff'),
+      url('#{$path}ttf/#{$type}.ttf') format('truetype');
+    } @else {
+      // traditional src inclusions
+      src: url('#{$path}eot/#{$type}.eot');
+      src: url('#{$path}eot/#{$type}.eot?#iefix') format('embedded-opentype'),
+      url('#{$path}woff/#{$type}.woff') format('woff'),
+      url('#{$path}ttf/#{$type}.ttf') format('truetype'),
+      url('#{$path}svg/#{$type}.svg##{$svg}') format('svg');
+    }
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
