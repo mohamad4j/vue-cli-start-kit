@@ -1,5 +1,14 @@
 {
-  "name": "cards-pwa",
+  "name": "vue-cli-start-kit",
+  "author": {
+    "name": "jabarzadeh.mohamad@gmail.com"
+  },
+  "keywords": [
+    "vuejs",
+    "vuecli",
+    "startkit",
+    "vue3"
+  ],
   "version": "0.1.0",
   "private": true,
   "scripts": {

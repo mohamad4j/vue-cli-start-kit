@@ -1,5 +1,24 @@
-# cards-pwa
+# Vue Cli Start Kit
 
+### A start kit for vue cli - vue3
+
+### Save time with these features:
+
+### api service
+- used [axios]('https://github.com/axios/axios') package 
+- used [universal cookie]('https://github.com/reactivestack/cookies/tree/master/packages/universal-cookie') package for save token
+- easy structure for vuex with an example
+
+### sass files structure
+- defined color variable and necessary classes 
+- bootstrap grid
+- etc
+### global mixin 
+- defined a global mixin
+### modular vuex 
+- modular store with an example
+### config files  
+- define config file for global configs.
 ## Project setup
 ```
 npm install
