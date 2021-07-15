@@ -5,8 +5,9 @@
 ### Save time with these features:
 
 ### api service
+- authentication in vue routers
 - used [axios](https://github.com/axios/axios) package 
-- used [universal cookie](https://github.com/reactivestack/cookies/tree/master/packages/universal-cookie) package for save token
+- used [universal cookie](https://github.com/reactivestack/cookies/tree/master/packages/universal-cookie) package to save token
 - easy structure for vuex with an example
 
 ### sass files structure
